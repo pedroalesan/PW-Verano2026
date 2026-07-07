@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #EAF6FF;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: #0D6EFD;
+}
+
+h2 {
+    color: #003566;
+}
+
+p {
+    color: #333333;
+}
+
+a {
+    color: #0D6EFD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+table {
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.boton:hover {
+    background: rgb(255, 234, 0);
+}
