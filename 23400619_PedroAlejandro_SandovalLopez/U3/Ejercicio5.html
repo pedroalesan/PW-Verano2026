@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 10px;
+        }
+
+        header a{
+            color: #202124;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .btnAcceder {
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 33px;
+            padding: 9px 23px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .btnAcceder:hover {
+            background-color: #1765cc;
+        }
+
+        header button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 33px;
+            padding: 9px 23px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #1765cc;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 111px;
+        }
+
+        .logo {
+            font-size: 66px;
+            font-weight: 500;
+            letter-spacing: -4px;
+            margin: 0;
+        }
+
+        .contenedor-logo {
+            margin-bottom: 30px;
+        }
+
+        .G {
+            color: #4285f4;
+        }
+
+        .o {
+            color: #ea4335;
+        }
+
+        .o2 {
+            color: #fbbc05;
+        }
+
+        .g {
+            color: #4285f4;
+        }
+
+        .l {
+            color: #34a853;
+        }
+
+        .e {
+            color: #ea4335;
+        }
+
+        .buscador {
+            width: 580px;
+            height: 50px;
+            border: 1px solid #dfe1e5;
+            border-radius: 30px;
+            padding: 0 20px;
+        }
+
+        .buscador:focus {
+            outline: none
+        }
+
+        .buscador:hover {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 40px;
+        }
+
+        .botones button {
+            height: 36px;
+            padding: 0 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color: #3c4043;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .botones button:hover {
+            border: 1px solid #dadce0;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .pais {
+            padding: 5px 8px;
+            border-bottom: 1px solid #dadce0;
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .enlaces {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 8px;
+        }
+
+        .izq {
+            display: flex;
+            gap: 10px;
+        }
+
+        .der {
+            display: flex;
+            gap: 10px
+        }
+
+        footer a{
+            text-decoration: none;
+            color:#5f6368;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="https://workspace.google.com/intl/es-419_mx/gmail/">Gmail</a>
+        <a href="https://images.google.com/?hl=es-419">Imágenes</a>
+        <a class="btnAcceder" href="https://accounts.google.com/">Acceder</a>
+    </header>
+
+    <main>
+        <section class="contenedor-logo">
+            <h1 class="logo">
+                <span class="G">G</span>
+                <span class="o">o</span>
+                <span class="o2">o</span>
+                <span class="g">g</span>
+                <span class="l">l</span>
+                <span class="e">e</span>
+            </h1>
+        </section>
+
+        <section class="contenedor-buscador">
+            <input class="buscador" type="text" placeholder="Ingresa una busqueda...">
+        </section>
+
+        <section class="botones">
+            <button class="buscar">Buscar con google</button>
+            <button class="suerte">Voy a tener suerte</button>
+        </section>
+    </main>
+
+    <footer>
+        <section class="pais">
+            México
+        </section>
+
+        <section class="enlaces">
+            <div class="izq">
+                <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre
+                    google</a>
+                <a
+                    href="https://business.google.com/es-all/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                <a
+                    href="https://business.google.com/es-all/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la busqueda</a>
+            </div>
+
+            <div class="der">
+                <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+                <a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+                <a href="#">Configuración</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
