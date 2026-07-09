@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            margin: 120px auto;
+        }
+
+        h1 {
+            color: #1877F2;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            width: 360px;
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 0 10px;
+        }
+
+        .btnIniciarSesion,
+        button {
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .btnIniciarSesion {
+            background: #0866ff;
+            color: white;
+        }
+
+        button {
+            background-color: #42b72a;
+            color: white;
+        }
+
+        .btnIniciarSesion:hover {
+            background: #1877f2;
+        }
+
+        button:hover {
+            background: #36a420;
+        }
+
+        a {
+            display: block;
+            color: #1877F2;
+            text-decoration: none;
+            font-size: small;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input,
+        a,
+        button,
+        hr {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="contenedor">
+        <!-- SECCIÓN DESCRIPCIÓN -->
+        <section class="descr">
+            <h1>facebook</h1>
+
+            <p>
+                Facebook te ayuda a comunicarte y
+                <br>
+                compartir con las personas que forman
+                <br>
+                parte de tu vida.
+            </p>
+        </section>
+
+        <!-- SECCIÓN LOGIN -->
+        <section class="login">
+            <form>
+                <fieldset>
+                    <input type="text" placeholder="Correo electrónico o número de teléfono">
+                    <input type="password" placeholder="Contraseña">
+                    <input class="btnIniciarSesion" type="submit" value="Iniciar sesión">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button>Crear cuenta nueva</button>
+                </fieldset>
+                <p>
+                    <strong>Crea una página</strong>
+                    para una celebridad, una marca o un
+                    <br>
+                    negocio.
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
