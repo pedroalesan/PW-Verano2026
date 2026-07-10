@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <title>X</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            display: flex;
+        }
+
+        .ladoDer {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Segoe UI, Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 250px;
+        }
+
+        .encabezados h1 {
+            margin: 0;
+            line-height: 1;
+        }
+
+        .encabezados h3 {
+            margin-top: 30px;
+        }
+
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+            height: 42px;
+            border-radius: 33px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .separador {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .separador hr {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #2f3336;
+        }
+
+        .separador span {
+            margin: 0 10px;
+        }
+
+        .btnGoogle,
+        .btnApple {
+            background: white;
+            color: black;
+        }
+
+        .btnCrearCuenta {
+            background: #1d9bf0;
+            color: white;
+        }
+
+        .logoGoogle,
+        .logoApple {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+        .enlaces {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+            gap: 12px;
+        }
+
+        .condiciones {
+            width: 320px;
+            font-size: 11px;
+            color: #71767b;
+            margin-top: 8px;
+        }
+
+        .condiciones a {
+            color: #1d9bf0;
+            text-decoration: none;
+        }
+
+        .condiciones a:hover {
+            text-decoration: underline;
+        }
+
+        .iniciarSesion p {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+
+        .btnIniciarSesion {
+            background: black;
+            color: #1d9bf0;
+            border: 1px solid #536471;
+        }
+
+        .btnIniciarSesion:hover {
+            background-color: #16181c;
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 20px;
+        }
+
+        .enlacesFooter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .enlacesFooter a,
+        .enlacesFooter span {
+            color: #71767b;
+            text-decoration: none;
+            font-size: 13px;
+            margin: 0 8px;
+        }
+
+        .enlacesFooter *:not(:first-child)::before {
+            content: "|";
+            margin-right: 8px;
+            color: #71767b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="logo">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-white-icon.png"
+                alt="Logo de x">
+        </div>
+
+        <div class="ladoDer">
+            <header>
+                <div class="encabezados">
+                    <h1>Lo que está<br>
+                        pasando ahora
+                    </h1>
+                    <h3>Únete Hoy</h3>
+                </div>
+
+            </header>
+
+            <main>
+                <section class="enlaces">
+                    <a href="#" class="boton btnGoogle">
+                        <img class="logoGoogle"
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                        Registrarse con Google
+                    </a>
+                    <a href="#" class="boton btnApple">
+                        <img class="logoApple"
+                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+                        Registrarse con Apple
+                    </a>
+
+                    <div class="separador">
+                        <hr>
+                        <span>o</span>
+                        <hr>
+                    </div>
+
+                    <a href="#" class="boton btnCrearCuenta">Crear cuenta</a>
+                </section>
+
+                <section class="condiciones">
+                    <p>Al registrarte, aceptas los<a href="#"> Términos del servicio</a> y la
+                        <a href="#">Política<br>de privacidad</a>
+                        , incluida la política de uso de cookies.
+                    </p>
+                </section>
+
+                <section class="iniciarSesion">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a class="boton btnIniciarSesion" href="#">Iniciar sesión</a>
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="enlacesFooter">
+            <a href="#">Información</a>
+            <a href="#">Descarga la app de X</a>
+            <a href="#">Grok</a>
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Condiciones de servicio</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Accesibilidad</a>
+            <a href="#">Información de anuncios</a>
+            <a href="#">Blog</a>
+            <a href="#">Empleos</a>
+            <a href="#">Recursos para marcas</a>
+            <a href="#">Publicidad</a>
+            <a href="#">Marketing</a>
+            <a href="#">X para empresas</a>
+            <a href="#">Desarrolladores</a>
+            <a href="#">Guía</a>
+            <a href="#">Configuración</a>
+            <span>© 2025 X Corp</span>
+        </div>
+    </footer>
+</body>
+
+</html>
