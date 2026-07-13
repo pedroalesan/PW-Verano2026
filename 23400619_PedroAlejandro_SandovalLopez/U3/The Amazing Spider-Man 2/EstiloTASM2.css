@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: inherit;
+}
+
+/* NAV ESTILO */
+header {
+    background-color: black;
+    padding: 7px 21px;
+}
+
+.contenedorNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navIzq {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navIzq a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navIzq a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.navDer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.NavDerArriba a {
+    display: inline-block;
+}
+
+.NavDerArriba img {
+    height: 33px;
+    width: auto;
+    display: block;
+}
+
+.NavDerAbajo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.NavDerAbajo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+}
+
+.NavDerAbajo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ELECTRO ESTILO */
+.electro {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url("assets/tasm2fondo.jpg") no-repeat center / cover;
+    width: 100%;
+    min-height: 121vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 60px;
+}
+
+.electroInfo h1 {
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 800px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.electroInfo h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.plataformas {
+    background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    padding: 15px 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-radius: 4px;
+}
+
+.plataformas img {
+    height: 30px;
+    width: auto;
+    display: block;
+    filter: brightness(0.9);
+}
+
+/* SOBRE LA PELÍCULA ESTILO */
+.sobrePeliSeccion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.tituloSeccion {
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-left: 4px solid #d32f2f;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+
+.contenedorColumnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* IZQ */
+.sobrePeliIzq {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posterSeccion {
+    background: #1f1f1f;
+    /* Cambiado a gris oscuro */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posterSeccion img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.posterSeccion h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+/* CENTRO */
+.sobrePeliCentro {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sinopsis h3 {
+    margin-top: 0;
+}
+
+.sobrePeliCentro h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.sinopsis p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.elencoLista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.elencoLista span {
+    display: inline;
+    white-space: nowrap;
+}
+
+/* DERECHA */
+.creditos {
+    flex: 1;
+}
+
+.creditos h2 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.creditos h3 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.creditos p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+/* FOOTER ESTILO */
+footer {
+    background: #070B16;
+    padding: 30px 20px;
+}
+
+.footerContenedor {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filaLinks {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.filaLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.filaLinks a:hover {
+    text-decoration: underline;
+}
+
+.footerCopyright p {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
