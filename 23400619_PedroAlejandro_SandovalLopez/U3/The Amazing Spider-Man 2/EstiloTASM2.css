@@ -160,7 +160,6 @@ header {
 
 .posterSeccion {
     background: #1f1f1f;
-    /* Cambiado a gris oscuro */
     padding: 15px;
     display: flex;
     flex-direction: column;
