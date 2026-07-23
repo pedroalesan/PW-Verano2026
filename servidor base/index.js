@@ -143,6 +143,7 @@ app.listen(PORT, () => {
     console.log("Servidor iniciado en http://localhost:" + PORT);
 })
 
+//ACT. 3
 //Ejercicio 1
 app.get("/par/:numero", (req, res) => {
     const numero = Number(req.params.numero);
@@ -155,4 +156,64 @@ app.get("/par/:numero", (req, res) => {
 });
 
 //Ejercicio 2
+app.get("/edad/:edad", (req, res) => {
+    const edad = Number(req.params.edad);
 
+    if (edad >= 18) {
+        res.send("Eres mayor de edad.");
+    } else {
+        res.send("Eres menor de edad.");
+    }
+});
+
+//Ejercicio 3
+app.get("/calculadora/:operacion/:a/:b", (req, res) => {
+
+    const operacion = req.params.operacion;
+    const a = Number(req.params.a);
+    const b = Number(req.params.b);
+
+    let resultado;
+
+    if (operacion === "suma") {
+        resultado = a + b;
+    } else if (operacion === "resta") {
+        resultado = a - b;
+    } else if (operacion === "multiplicacion") {
+        resultado = a * b;
+    } else if (operacion === "division") {
+        resultado = a / b;
+    } else {
+        res.send("Operación no válida");
+        return;
+    }
+
+    res.send("Resultado: " + resultado);
+});
+
+//Ejercicio 4
+app.get("/tabla/:numero", (req, res) => {
+    const numero = Number(req.params.numero);
+    let respuesta = "";
+
+    for (let i = 1; i <= 10; i++) {
+        respuesta += numero + " x " + i + " = " + (numero * i) + "<br>";
+    }
+
+    res.send(respuesta);
+});
+
+//Ejercicio 5
+app.get("/calificacion/:nota", (req, res) => {
+    const nota = Number(req.params.nota);
+
+    if (nota >= 90) {
+        res.send("Excelente");
+    } else if (nota >= 80) {
+        res.send("Muy bien");
+    } else if (nota >= 70) {
+        res.send("Aprobado");
+    } else {
+        res.send("Reprobado");
+    }
+});
